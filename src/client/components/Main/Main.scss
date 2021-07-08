@@ -1,0 +1,27 @@
+@import '../../theme/default.scss';
+
+.Main {
+    position: relative;
+
+    flex: 1;
+}
+
+/* Large desktops */
+@media (min-width: 1280px) {
+}
+
+/* Desktops */
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+/* Laptop */
+@media (min-width: 960px) and (max-width: 1023px) {
+}
+
+/* Touch */
+@media (min-width: 768px) and (max-width: 959px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 320px) and (max-width: 767px) {
+}

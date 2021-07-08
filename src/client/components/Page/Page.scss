@@ -1,0 +1,46 @@
+@import '../../theme/default.scss';
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: $font-default;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 20px;
+
+    color: #000;
+    background: #fff;
+}
+
+.Page {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.Page .Header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.Page header,
+.Page footer {
+    padding: 0 20px;
+}

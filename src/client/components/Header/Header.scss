@@ -1,0 +1,66 @@
+@import '../../theme/default.scss';
+
+.Header {
+    position: relative;
+    z-index: 20;
+
+    background: $color-white;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+}
+
+.Header-Container {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 72px;
+
+    white-space: nowrap;
+}
+
+.Header-Logo .Logo {
+    width: 177px;
+    height: 56px;
+
+    background-image: url(images/logo.svg);
+}
+
+.Header-Left {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding-right: 12px;
+
+    opacity: 1;
+
+    transition: opacity .3s cubic-bezier(.36, .66, .04, 1);
+}
+
+.Header-Right {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding-left: 12px;
+
+    font-size: 17px;
+
+    opacity: 1;
+
+    transition: opacity .3s cubic-bezier(.36, .66, .04, 1);
+}
+
+.Header-Right .Icon {
+    right: 11px;
+}
